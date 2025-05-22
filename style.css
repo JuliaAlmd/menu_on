@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    header{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    }
+    
+    .container-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    border-bottom: 2px solid #eee;
+    }
+    
+    img.logo {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 100px;
+    display: block;
+    }
+    
+    nav#info ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    }
+
+    nav#info ul li a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500; 
+        font-size: 1rem; 
+        color: #000
+    }
+    
+    
+    nav#info a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif
+    }
+    
+    .imgSvg{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    }
+    
+    .search-section {
+    background-color: #fff;
+    padding: 20px 0;
+    }
+    
+    .container-search {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    }
+    
+    .search-bar {
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    
+    .search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    flex: 1;
+    padding-left: 10px;
+    color: #333;
+    }
+    
+    .search-icon {
+    font-size: 18px;
+    color: #888;
+    }
+    
+    
+    .nav-sections ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif
+    }
+    
+    .nav-sections a {
+    text-decoration: none;
+    color: #d32f2f;
+    font-weight: bold;
+    transition: color 0.3s;
+    }
+    
+    .nav-sections a:hover {
+    color: #ff7043;
+    }
+    
+    .menu-sections {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    }
+    
+    .pizza-section {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 40px;
+    }
+    
+    .pizza-section h2 {
+    font-size: 2rem;
+    color: #d62828; /* vermelho do design */
+    margin-bottom: 20px;
+    border-left: 5px solid #d62828;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif
+    }
+    
+    .card-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    }
+    
+    .pizza-card {
+    width: 250px;
+    background-color: #fff8f1;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    }
+    
+    .pizza-card:hover {
+    transform: scale(1.03);
+    }
+    
+    .pizza-card img {
+    width: 100%;
+    border-radius: 10px;
+    }
+    
+    .pizza-card h3 {
+    color: #b30000;
+    margin: 0.8rem 0 0.5rem;
+    font-family: 'Poppins', sans-serif
+    }
+    
+    .pizza-card p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif
+    }
+    
+    .pizza-card .preco {
+    font-weight: bold;
+    color: #2e7d32;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif
+    }
+        
+    #carrinho-icone {
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        font-size: 32px;
+        cursor: pointer;
+        z-index: 1000;
+      }
+
+      #carrinho-icone img{width: 50px; height: 50px;}
+    
+      #carrinho-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 700px;
+        background-color: white;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+        z-index: 999;
+        overflow-y: auto;
+        max-height: 80vh;
+        font-family: 'Poppins', sans-serif
+      }
+    
+      #form-cliente input[type="text"],
+      #form-cliente input[type="tel"],
+      #form-cliente input[type="email"] {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+    
+      .whatsapp-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #25D366 !important;
+        color: white !important;
+        transition: background-color 0.3s;
+      }
+      
+      .whatsapp-button:hover {
+        background-color: #128C7E !important;
+      }
+      
+      .fa-whatsapp {
+        font-size: 1.2rem;
+
+      }
+    
+      #itens-carrinho {
+        margin-top: 16px;
+      }
+    
+      .item-carrinho {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+      }
+    
+      .item-carrinho img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 8px;
+      }
+    
+      .item-carrinho textarea {
+        margin-left: auto;
+        padding: 4px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        resize: none;
+      }
+    
+      #total {
+        font-weight: bold;
+        margin-top: 10px;
+        text-align: right;
+        font-family: 'Poppins', sans-serif
+      }
+    
+    
+      .info-carrinho {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-family: 'Poppins', sans-serif
+      }
+
+      .item-carrinho .quantidade-container {
+        margin-top: 5px;
+        justify-content: flex-start; /* Botões alinhados à esquerda */
+      }
+
+
+  /*  Estilo para os botões de quantidade */
+.btn-quantidade {
+    padding: 0.3rem 0.8rem;
+    background-color: #d62828;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif
+  }
+  
+  .btn-quantidade:hover {
+    background-color: #b30000;
+  }
+  
+  .quantidade-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.7rem;
+  }
+  
+  .quantidade {
+    margin: 0 10px;
+    font-weight: bold;
+  }    
+
+  #promocoes {
+    background-color: #fff8f1; 
+    padding: 30px 20px;
+    border-radius: 8px;
+    max-width: 850px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Título da seção */
+  #promocoes h2 {
+    color: #b30000; 
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 1.2px;
+  }
+  
+  /* Container da mensagem */
+  .promo-msg {
+    background-color: #fff8f1;
+    border: 0px dashed #d02020;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #6d4c41; /* Marrom escuro para o texto */
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  /* Destaque do strong */
+  .promo-msg strong {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #d02020
+  }
+  
+  /* Parágrafo */
+  .promo-msg p {
+    margin: 0;
+  }
+
+  .horario-funcionamento h3, .redes-sociais h3 {
+    color: #b30000; 
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-family: 'Poppins', sans-serif
+
+}
+  
+  .info-extra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #f5f5f5;
+    border-radius: 50%;
+    color: #555;
+    font-size: 28px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative; /* Para ajustes finos */
+}
+
+/* Ajustes específicos para cada ícone */
+.social-icons a .fa-facebook-f {
+    left: -1px; /* Compensa o espaço vazio do ícone */
+    transform: scale(1.1); /* Aumenta ligeiramente o Facebook */
+}
+
+.social-icons a .fa-instagram {
+    transform: scale(0.95); /* Reduz levemente o Instagram */
+}
+
+.social-icons a .fa-whatsapp {
+    transform: scale(0.98); /* Pequeno ajuste no WhatsApp */
+}
+
+/* Efeitos hover (mantidos) */
+.social-icons a:hover {
+    background: #e63946;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(230, 57, 70, 0.3);
+}
+
+.pizzas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* Cartão padrão */
+.pizza-card {
+  flex: 1 1 250px;
+  max-width: 250px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* No celular, pizza embaixo da outra */
+@media (max-width: 600px) {
+  .pizzas-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pizza-card {
+    max-width: 90%;
+  }
+}

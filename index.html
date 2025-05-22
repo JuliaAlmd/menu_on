@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tele Pizza - A melhor pizza da cidade!">
+    <link rel="shortcut icon" href="imagens/logo.jpg" type="image/x-icon">
+    <link rel="img" 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tele Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <img src="/imagens/logo.jpg" alt="logo Tele Pizza" class="logo">
+            <nav id="info">
+                <ul> 
+                    <!--aqui estou colocando link para endereço e telefone, e estou colocando as imagnes do formato svg para style-->
+
+                    <li>
+                        <a href="https://g.co/kgs/7ZLHCeG" target="_blank" rel="noopener noreferrer">
+                        <svg class="imgSvg" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        Rua José Osvaldo, 20</a>
+                    </li>
+
+
+                    <li><a href=""><svg class="imgSvg" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94M18.5 21C9.93959 21 3 14.0604 3 5.5C3 5.11378 3.01413 4.73086 3.04189 4.35173C3.07375 3.91662 3.08968 3.69907 3.2037 3.50103C3.29814 3.33701 3.4655 3.18146 3.63598 3.09925C3.84181 3 4.08188 3 4.56201 3H7.37932C7.78308 3 7.98496 3 8.15802 3.06645C8.31089 3.12515 8.44701 3.22049 8.55442 3.3441C8.67601 3.48403 8.745 3.67376 8.88299 4.05321L10.0491 7.26005C10.2096 7.70153 10.2899 7.92227 10.2763 8.1317C10.2643 8.31637 10.2012 8.49408 10.0942 8.64506C9.97286 8.81628 9.77145 8.93713 9.36863 9.17882L8 10C9.2019 12.6489 11.3501 14.7999 14 16L14.8212 14.6314C15.0629 14.2285 15.1837 14.0271 15.3549 13.9058C15.5059 13.7988 15.6836 13.7357 15.8683 13.7237C16.0777 13.7101 16.2985 13.7904 16.74 13.9509L19.9468 15.117C20.3262 15.255 20.516 15.324 20.6559 15.4456C20.7795 15.553 20.8749 15.6891 20.9335 15.842C21 16.015 21 16.2169 21 16.6207V19.438C21 19.9181 21 20.1582 20.9007 20.364C20.8185 20.5345 20.663 20.7019 20.499 20.7963C20.3009 20.9103 20.0834 20.9262 19.6483 20.9581C19.2691 20.9859 18.8862 21 18.5 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>2209-6732</a></li>
+                </ul>
+            </nav>
+        </div><!--container-header-->
+    </header>
+
+    <!--seção de pesquisa e navegação-->
+
+    <section class="search-section">
+        <div class="container-search">
+          <div class="search-bar">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<i class="fas fa-search"></i>
+            <input type="text" placeholder="Buscar pizza...">
+          </div>
+          <nav class="nav-sections">
+            <ul>
+              <li><a href="#salgadas">Salgadas</a></li>
+              <li><a href="#doces">Doces</a></li>
+              <li><a href="#promocoes">Promoções</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <main class="menu-sections">
+        <section id="salgadas" class="pizza-section">
+
+            <h2>Pizzas Salgadas</h2>
+
+            <section class="card-section">
+                <div class="pizza-card">
+                  <img src="/imagens/frango-catupiry.png" alt="Pizza de Frango com Catupiry" />
+                  <h3>Frango com Catupiry</h3>
+                  <p>Frango desfiado com catupiry cremoso, azeitonas verdes e toque de orégano.</p>
+                  <span class="preco">R$ 39,90</span>
+                
+                  <!-- Botões de quantidade -->
+
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('frango-catu', -1)">-</button>
+                      <span class="quantidade" data-id="frango-catu">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('frango-catu', 1)">+</button>
+                    </div>
+                
+                </div>
+              
+                <div class="pizza-card">
+                  <img src="/imagens/calabresa.png" alt="Pizza de Calabresa" />
+                  <h3>Calabresa</h3>
+                  <p>Calabresa fatiada, cebola, azeitonas e muito queijo com orégano.</p>
+                  <span class="preco">R$ 37,90</span>
+                  
+                  <!-- Botões de quantidade -->
+
+
+                  <div class="quantidade-container">
+                    <button class="btn-quantidade" onclick="alterarQuantidade('calabresa', -1)">-</button>
+                    <span class="quantidade" data-id="calabresa">0</span>
+                    <button class="btn-quantidade" onclick="alterarQuantidade('calabresa', 1)">+</button>
+                  </div>
+
+                  </div>
+
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.04.52.jpeg" alt="Pizza Marguerita" />
+                    <h3>Marguerita</h3>
+                    <p>Mussarela, tomate, manjericão</p>
+                    <span class="preco">R$ 55,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('marguerita', -1)">-</button>
+                      <span class="quantidade" data-id="marguerita">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('marguerita', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.09.25.jpeg" alt="Pizza Peperoni Gourmet" />
+                    <h3>Peperoni Gourmet</h3>
+                    <p>Mussarela, peperoni, cream cheese Philadelphia</p>
+                    <span class="preco">R$ 75,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('peperoni-gourmet', -1)">-</button>
+                      <span class="quantidade" data-id="peperoni-gourmet">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('peperoni-gourmet', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.12.33.jpeg" alt="Pizza Lombo Especial" />
+                    <h3>Lombo Especial</h3>
+                    <p>Mussarela, lombo, catupiry original</p>
+                    <span class="preco">R$ 65,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('lombo-especial', -1)">-</button>
+                      <span class="quantidade" data-id="lombo-especial">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('lombo-especial', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.14.06.jpeg" alt="Pizza Peperoni Especial" />
+                    <h3>Peperoni Especial</h3>
+                    <p>Mussarela, peperoni e catupiry</p>
+                    <span class="preco">R$ 65,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('peperoni-especial', -1)">-</button>
+                      <span class="quantidade" data-id="peperoni-especial">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('peperoni-especial', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.15.53.jpeg" alt="Pizza A Moda" />
+                    <h3>A Moda</h3>
+                    <p>Presunto, champignons, catupiry original, bacon e parmesão</p>
+                    <span class="preco">R$ 65,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('a-moda', -1)">-</button>
+                      <span class="quantidade" data-id="a-moda">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('a-moda', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.18.09.jpeg" alt="Pizza Carne Seca Especial" />
+                    <h3>Carne Seca Especial</h3>
+                    <p>Mussarela, carne seca, catupiry original</p>
+                    <span class="preco">R$ 60,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('carne-seca', -1)">-</button>
+                      <span class="quantidade" data-id="carne-seca">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('carne-seca', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.19.51.jpeg" alt="Pizza Frango Catupiry" />
+                    <h3>Frango Catupiry</h3>
+                    <p>Frango, catupiry original</p>
+                    <span class="preco">R$ 58,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('frango-catupiry2', -1)">-</button>
+                      <span class="quantidade" data-id="frango-catupiry2">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('frango-catupiry2', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.26.34.jpeg" alt="Pizza Dois Queijos" />
+                    <h3>Dois Queijos</h3>
+                    <p>Mussarela e catupiry original</p>
+                    <span class="preco">R$ 55,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('dois-queijos', -1)">-</button>
+                      <span class="quantidade" data-id="dois-queijos">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('dois-queijos', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.28.14.jpeg" alt="Pizza Temaki" />
+                    <h3>Temaki</h3>
+                    <p>Atum, cream cheese, cebolinha, molho taré</p>
+                    <span class="preco">R$ 70,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('temaki', -1)">-</button>
+                      <span class="quantidade" data-id="temaki">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('temaki', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.29.09.jpeg" alt="Pizza Atum" />
+                    <h3>Atum</h3>
+                    <p>Atum e cebolas</p>
+                    <span class="preco">R$ 55,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('atum', -1)">-</button>
+                      <span class="quantidade" data-id="atum">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('atum', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.30.41.jpeg" alt="Pizza Baiana" />
+                    <h3>Baiana</h3>
+                    <p>Calabresa moída, pimenta, ovo, cebola, azeitona e orégano</p>
+                    <span class="preco">R$ 45,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('baiana', -1)">-</button>
+                      <span class="quantidade" data-id="baiana">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('baiana', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.32.05.jpeg" alt="Pizza Bacon Especial" />
+                    <h3>Bacon Especial</h3>
+                    <p>Mussarela, bacon e catupiry original</p>
+                    <span class="preco">R$ 65,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('bacon-especial', -1)">-</button>
+                      <span class="quantidade" data-id="bacon-especial">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('bacon-especial', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.33.16.jpeg" alt="Pizza Palmito Especial" />
+                    <h3>Palmito Especial</h3>
+                    <p>Mussarela, palmito e catupiry</p>
+                    <span class="preco">R$ 60,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('palmito-especial', -1)">-</button>
+                      <span class="quantidade" data-id="palmito-especial">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('palmito-especial', 1)">+</button>
+                    </div>
+                  </div>
+                
+                  <div class="pizza-card">
+                    <img src="img/WhatsApp Image 2025-05-15 at 22.34.49.jpeg" alt="Pizza Camarão Gourmet" />
+                    <h3>Camarão Gourmet</h3>
+                    <p>Mussarela, alho poró, camarão, cream cheese</p>
+                    <span class="preco">R$ 80,00</span>
+                    <div class="quantidade-container">
+                      <button class="btn-quantidade" onclick="alterarQuantidade('camarao-gourmet', -1)">-</button>
+                      <span class="quantidade" data-id="camarao-gourmet">0</span>
+                      <button class="btn-quantidade" onclick="alterarQuantidade('camarao-gourmet', 1)">+</button>
+                    </div>
+                  </div>
+                
+
+              <div class="pizza-card">
+                <img src="img/WhatsApp Image 2025-05-15 at 20.38.24.jpeg" alt="Pizza Camarão Especial" />
+                <h3>Pizza Camarão Especial</h3>
+                <p>Mussarela, camarão, catupiry original</p>
+                <span class="preco">R$ 70,00</span>
+                <div class="quantidade-container">
+                  <button class="btn-quantidade" onclick="alterarQuantidade('camarao-especial', -1)">-</button>
+                  <span class="quantidade" data-id="camarao-especial">0</span>
+                  <button class="btn-quantidade" onclick="alterarQuantidade('camarao-especial', 1)">+</button>
+                </div>
+              </div>
+            
+              <div class="pizza-card">
+                <img src="img/WhatsApp Image 2025-05-15 at 20.38.54.jpeg" alt="Pizza Calabresa" />
+                <h3>Pizza Calabresa</h3>
+                <p>Calabresa fatiada e cebola, orégano e azeitona</p>
+                <span class="preco">R$ 45,00</span>
+                <div class="quantidade-container">
+                  <button class="btn-quantidade" onclick="alterarQuantidade('calabresa', -1)">-</button>
+                  <span class="quantidade" data-id="calabresa">0</span>
+                  <button class="btn-quantidade" onclick="alterarQuantidade('calabresa', 1)">+</button>
+                </div>
+              </div>
+            
+              <div class="pizza-card">
+                <img src="img/WhatsApp Image 2025-05-15 at 20.39.05.jpeg" alt="Pizza Toscana Especial" />
+                <h3>Pizza Toscana Especial</h3>
+                <p>Mussarela, calabresa, catupiry</p>
+                <span class="preco">R$ 60,00</span>
+                <div class="quantidade-container">
+                  <button class="btn-quantidade" onclick="alterarQuantidade('toscana-especial', -1)">-</button>
+                  <span class="quantidade" data-id="toscana-especial">0</span>
+                  <button class="btn-quantidade" onclick="alterarQuantidade('toscana-especial', 1)">+</button>
+                </div>
+              </div>
+            
+              <div class="pizza-card">
+                <img src="img/WhatsApp Image 2025-05-15 at 20.39.19.jpeg" alt="Pizza Napolitana" />
+                <h3>Pizza Napolitana</h3>
+                <p>Mussarela, tomate, parmesão</p>
+                <span class="preco">R$ 58,00</span>
+                <div class="quantidade-container">
+                  <button class="btn-quantidade" onclick="alterarQuantidade('napolitana', -1)">-</button>
+                  <span class="quantidade" data-id="napolitana">0</span>
+                  <button class="btn-quantidade" onclick="alterarQuantidade('napolitana', 1)">+</button>
+                </div>
+              </div>
+            
+              <div class="pizza-card">
+                <img src="img/WhatsApp Image 2025-05-15 at 20.39.30.jpeg" alt="Pizza Milho Especial" />
+                <h3>Pizza Milho Especial</h3>
+                <p>Mussarela, milho, catupiry</p>
+                <span class="preco">R$ 60,00</span>
+                <div class="quantidade-container">
+                  <button class="btn-quantidade" onclick="alterarQuantidade('milho-especial', -1)">-</button>
+                  <span class="quantidade" data-id="milho-especial">0</span>
+                  <button class="btn-quantidade" onclick="alterarQuantidade('milho-especial', 1)">+</button>
+                </div>
+              </div>
+            
+              <div class="pizza-card">
+                <img src="img/WhatsApp Image 2025-05-15 at 20.39.41.jpeg" alt="Pizza Brócolis Especial" />
+                <h3>Pizza Brócolis Especial</h3>
+                <p>Mussarela, brócolis, bacon, catupiry original</p>
+                <span class="preco">R$ 65,00</span>
+                <div class="quantidade-container">
+                  <button class="btn-quantidade" onclick="alterarQuantidade('brocolis-especial', -1)">-</button>
+                  <span class="quantidade" data-id="brocolis-especial">0</span>
+                  <button class="btn-quantidade" onclick="alterarQuantidade('brocolis-especial', 1)">+</button>
+                </div>
+              </div>
+            
+              <div class="pizza-card">
+                <img src="img/WhatsApp Image 2025-05-15 at 20.39.51.jpeg" alt="Pizza Alho" />
+                <h3>Pizza Alho</h3>
+                <p>Mussarela e alho frito, orégano e azeitona</p>
+                <span class="preco">R$ 45,00</span>
+                <div class="quantidade-container">
+                  <button class="btn-quantidade" onclick="alterarQuantidade('alho', -1)">-</button>
+                  <span class="quantidade" data-id="alho">0</span>
+                  <button class="btn-quantidade" onclick="alterarQuantidade('alho', 1)">+</button>
+                </div>
+              </div>
+            
+              <div class="pizza-card">
+                <img src="img/WhatsApp Image 2025-05-15 at 20.40.03.jpeg" alt="Pizza Atum Especial" />
+                <h3>Pizza Atum Especial</h3>
+                <p>Mussarela, atum, catupiry original</p>
+                <span class="preco">R$ 68,00</span>
+                <div class="quantidade-container">
+                  <button class="btn-quantidade" onclick="alterarQuantidade('atum-especial', -1)">-</button>
+                  <span class="quantidade" data-id="atum-especial">0</span>
+                  <button class="btn-quantidade" onclick="alterarQuantidade('atum-especial', 1)">+</button>
+                </div>
+              </div>
+            
+              <div class="pizza-card">
+                <img src="img/WhatsApp Image 2025-05-15 at 20.40.19.jpeg" alt="Pizza Portuguesa" />
+                <h3>Pizza Portuguesa</h3>
+                <p>Mussarela, presunto, ovo, cebola</p>
+                <span class="preco">R$ 55,00</span>
+                <div class="quantidade-container">
+                  <button class="btn-quantidade" onclick="alterarQuantidade('portuguesa', -1)">-</button>
+                  <span class="quantidade" data-id="portuguesa">0</span>
+                  <button class="btn-quantidade" onclick="alterarQuantidade('portuguesa', 1)">+</button>
+                </div>
+              </div>
+            
+              <div class="pizza-card">
+                <img src="img/WhatsApp Image 2025-05-15 at 20.40.31.jpeg" alt="Pizza Quatro Queijos" />
+                <h3>Pizza Quatro Queijos</h3>
+                <p>Mussarela, catupiry, gorgonzola, parmesão</p>
+                <span class="preco">R$ 60,00</span>
+                <div class="quantidade-container">
+                  <button class="btn-quantidade" onclick="alterarQuantidade('quatro-queijos', -1)">-</button>
+                  <span class="quantidade" data-id="quatro-queijos">0</span>
+                  <button class="btn-quantidade" onclick="alterarQuantidade('quatro-queijos', 1)">+</button>
+                </div>
+              </div>
+            
+              <div class="pizza-card">
+                <img src="img/WhatsApp Image 2025-05-15 at 20.40.43.jpeg" alt="Pizza Bauru" />
+                <h3>Pizza Bauru</h3>
+                <p>Presunto, mussarela e tomate fatiado, azeitona e orégano</p>
+                <span class="preco">R$ 45,00</span>
+                <div class="quantidade-container">
+                  <button class="btn-quantidade" onclick="alterarQuantidade('bauru', -1)">-</button>
+                  <span class="quantidade" data-id="bauru">0</span>
+                  <button class="btn-quantidade" onclick="alterarQuantidade('bauru', 1)">+</button>
+                </div>
+              </div>
+            
+              <div class="pizza-card">
+                <img src="img/WhatsApp Image 2025-05-15 at 20.51.09.jpeg" alt="Pizza Mussarela" />
+                <h3>Pizza Mussarela</h3>
+                <p>Mussarela, azeitona e orégano</p>
+                <span class="preco">R$ 48,00</span>
+                <div class="quantidade-container">
+                  <button class="btn-quantidade" onclick="alterarQuantidade('mussarela', -1)">-</button>
+                  <span class="quantidade" data-id="mussarela">0</span>
+                  <button class="btn-quantidade" onclick="alterarQuantidade('mussarela', 1)">+</button>
+                </div>
+              </div>
+                  
+                  </section>
+
+                </div>
+              </section>
+        </section>
+    
+        <section id="doces" class="pizza-section">
+            <h2>Pizzas Doces</h2>
+
+        <section class="card-section">
+
+            <div class="pizza-card">
+              <img src="img/WhatsApp Image 2025-05-17 at 12.23.42.jpeg" alt="Pizza Chocolate com Morango" />
+              <h3>Chocolate com Morango</h3>
+              <p>Creme de leite, chocolate ao leite Nestlé e morango</p>
+              <span class="preco">R$ 65,00</span>
+              <div class="quantidade-container">
+                <button class="btn-quantidade" onclick="alterarQuantidade('chocolate-morango', -1)">-</button>
+                <span class="quantidade" data-id="chocolate-morango">0</span>
+                <button class="btn-quantidade" onclick="alterarQuantidade('chocolate-morango', 1)">+</button>
+              </div>
+            </div>
+          
+            <div class="pizza-card">
+              <img src="img/WhatsApp Image 2025-05-17 at 12.23.54.jpeg" alt="Pizza Chocolate com Banana" />
+              <h3>Chocolate com Banana</h3>
+              <p>Creme de leite, chocolate ao leite Nestlé e banana com canela</p>
+              <span class="preco">R$ 60,00</span>
+              <div class="quantidade-container">
+                <button class="btn-quantidade" onclick="alterarQuantidade('chocolate-banana', -1)">-</button>
+                <span class="quantidade" data-id="chocolate-banana">0</span>
+                <button class="btn-quantidade" onclick="alterarQuantidade('chocolate-banana', 1)">+</button>
+              </div>
+            </div>
+          
+            <div class="pizza-card">
+              <img src="img/WhatsApp Image 2025-05-17 at 12.24.09.jpeg" alt="Pizza Romeu e Julieta" />
+              <h3>Romeu e Julieta</h3>
+              <p>Mussarela, cream cheese Philadelphia e goiabada</p>
+              <span class="preco">R$ 58,00</span>
+              <div class="quantidade-container">
+                <button class="btn-quantidade" onclick="alterarQuantidade('romeu-julieta', -1)">-</button>
+                <span class="quantidade" data-id="romeu-julieta">0</span>
+                <button class="btn-quantidade" onclick="alterarQuantidade('romeu-julieta', 1)">+</button>
+              </div>
+            </div>
+          
+            <div class="pizza-card">
+            <img src="img/chocolate branco.jpg" alt="Pizza Chocolate Branco" />
+              <h3>Chocolate Branco</h3>
+              <p>Creme de leite e chocolate branco Nestlé</p>
+              <span class="preco">R$ 60,00</span>
+              <div class="quantidade-container">
+                <button class="btn-quantidade" onclick="alterarQuantidade('chocolate-branco', -1)">-</button>
+                <span class="quantidade" data-id="chocolate-branco">0</span>
+                <button class="btn-quantidade" onclick="alterarQuantidade('chocolate-branco', 1)">+</button>
+              </div>
+            </div>
+          
+            <div class="pizza-card">
+              <img src="img/WhatsApp Image 2025-05-17 at 12.24.32.jpeg" alt="Pizza Cheese Cake de Frutas" />
+              <h3>Cheesecake de Frutas</h3>
+              <p>Cream cheese Philadelphia, chocolate branco caramelizado</p>
+              <span class="preco">R$ 65,00</span>
+              <div class="quantidade-container">
+                <button class="btn-quantidade" onclick="alterarQuantidade('cheesecake-frutas', -1)">-</button>
+                <span class="quantidade" data-id="cheesecake-frutas">0</span>
+                <button class="btn-quantidade" onclick="alterarQuantidade('cheesecake-frutas', 1)">+</button>
+              </div>
+            </div>
+          
+            <div class="pizza-card">
+              <img src="img/WhatsApp Image 2025-05-17 at 12.24.40.jpeg" alt="Pizza Banana Nevada" />
+              <h3>Banana Nevada</h3>
+              <p>Creme de leite, banana com canela e chocolate branco forneável</p>
+              <span class="preco">R$ 58,00</span>
+              <div class="quantidade-container">
+                <button class="btn-quantidade" onclick="alterarQuantidade('banana-nevada', -1)">-</button>
+                <span class="quantidade" data-id="banana-nevada">0</span>
+                <button class="btn-quantidade" onclick="alterarQuantidade('banana-nevada', 1)">+</button>
+              </div>
+            </div>
+          
+            <div class="pizza-card">
+              <img src="img/WhatsApp Image 2025-05-17 at 12.24.46.jpeg" alt="Pizza Chocolate com M&Ms" />
+              <h3>Chocolate com M&Ms</h3>
+              <p>Creme de leite, chocolate ao leite Nestlé e M&Ms</p>
+              <span class="preco">R$ 65,00</span>
+              <div class="quantidade-container">
+                <button class="btn-quantidade" onclick="alterarQuantidade('chocolate-mm', -1)">-</button>
+                <span class="quantidade" data-id="chocolate-mm">0</span>
+                <button class="btn-quantidade" onclick="alterarQuantidade('chocolate-mm', 1)">+</button>
+              </div>
+            </div>
+          
+          </section>
+        </section>
+    
+        <section id="promocoes" class="pizza-section">
+            <h2>Promoções</h2>
+            <div class="promo.msg">
+                <strong> Você ama desconto? A gente também!</strong> 
+                   <p> Acompanhe nosso cardápio e nossas redes sociais — em breve, novidades promocionais! 📱🔥<br>
+                    Salve nosso número e receba em primeira mão nossas promoções!</p>
+            </div>
+        </section>
+    </main>
+      
+     <!-- Ícone do carrinho -->
+  <div id="carrinho-icone"><img src="imagens/cart.png" alt=""></div>
+
+  <!-- Modal do carrinho -->
+  <div id="carrinho-popup">
+    <h2>Seu Pedido</h2>
+    <button class="fechar-carrinho" onclick="fecharCarrinho()">
+        &times;
+    </button>
+    <div id="itens-carrinho"></div>
+    <p id="total">Total: R$ 0,00</p>
+
+    <h3>Dados do Cliente</h3>
+    <form id="form-cliente">
+      <input type="text" placeholder="Nome" required>
+      <input type="tel" placeholder="Celular" required>
+      <input type="email" placeholder="Email" required>
+
+      <label>
+        <input type="radio" name="entrega" value="retirar" checked> Retirar no restaurante
+      </label>
+      <label>
+        <input type="radio" name="entrega" value="entregar"> Entregar em casa
+      </label>
+
+      <div id="dados-entrega" style="display: none;">
+        <input type="text" placeholder="CEP" required>
+        <input type="text" placeholder="Endereço" required>
+        <input type="text" placeholder="Número" required>
+        <input type="text" placeholder="Complemento (opcional)">
+      </div>
+
+      <textarea id="observacoes" placeholder="Alguma observação?"></textarea>
+
+      <button type="submit" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i> Enviar pedido via WhatsApp
+      </button>
+  </form>
+</div>
+
+<div class="info-extra">
+    <div class="horario-funcionamento">
+        <h3><i class="far fa-clock"></i> Horário de Funcionamento</h3>
+        <ul>
+            <li><span class="dia">Segunda-feira:</span> <span class="fechado">FECHADO</span></li>
+            <li><span class="dia">Terça-feira:</span> 18h - 23h59</li>
+            <li><span class="dia">Quarta-feira:</span> 18h - 23h59</li>
+            <li><span class="dia">Quinta-feira:</span> 18h - 23h59</li>
+            <li><span class="dia">Sexta-feira:</span> 18h - 23h59</li>
+            <li><span class="dia">Sábado:</span> 18h - 23h59</li>
+            <li><span class="dia">Domingo:</span> 18h - 23h59</li>
+        </ul>
+
+
+        <div class="redes-sociais">
+            <h3><i class="fas fa-share-alt"></i> Siga-nos</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/telepizza.vila.gustavo/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/telepizzavg/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/551122096732" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
