@@ -146,6 +146,9 @@
     padding-left: 10px;
     font-family: 'Poppins', sans-serif
     }
+
+
+  
     
     .card-section {
     display: flex;
@@ -194,6 +197,10 @@
     font-size: 1rem;
     font-family: 'Poppins', sans-serif
     }
+
+
+
+/** CART SECTION **/
         
     #carrinho-icone {
         position: fixed;
@@ -223,6 +230,21 @@
         max-height: 80vh;
         font-family: 'Poppins', sans-serif
       }
+
+
+    .fechar-carrinho{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      color: #000;
+      background-color: red;
+      font-size: 30px;
+      border: 0;
+      border-radius: 50%;
+    }
     
       #form-cliente input[type="text"],
       #form-cliente input[type="tel"],
@@ -462,7 +484,7 @@
 }
 
 /* No celular, pizza embaixo da outra */
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
   .pizzas-container {
     flex-direction: column;
     align-items: center;
@@ -471,4 +493,116 @@
   .pizza-card {
     max-width: 90%;
   }
+}*/
+
+/* Adicione isso no final do seu CSS existente */
+
+/* Media Queries para Mobile (até 768px) */
+@media (max-width: 768px) {
+  /* Header */
+  .container-header {
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+
+  nav#info ul li a {
+    font-size: 0.9rem;
+  }
+
+  .imgSvg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Seção de Cards */
+  .card-section {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .pizza-card {
+    width: 70%;
+    max-width: none;
+    margin: 0 auto;
+  }
+
+  /* Seção de Pesquisa */
+  .search-bar {
+    max-width: 100%;
+  }
+
+  .nav-sections ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-sections li{
+    border-bottom: 1px solid #e4e1e1;
+  }
+
+  /* Carrinho */
+  #carrinho-popup {
+    width: 95%;
+    padding: 15px;
+  }
+
+  /* Promoções */
+  #promocoes {
+    padding: 20px 15px;
+    margin: 20px auto;
+  }
+
+  .promo-msg strong {
+    font-size: 1.1rem;
+  }
+
+  /* Horário e Redes Sociais */
+  .info-extra {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .horario-funcionamento h3,
+  .redes-sociais h3 {
+    font-size: 1.5rem;
+  }
+
+  .social-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
 }
+
+/* Ajustes para Telas Muito Pequenas (até 480px) */
+@media (max-width: 480px) {
+  .pizza-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .pizza-card p {
+    font-size: 0.85rem;
+  }
+
+  .btn-quantidade {
+    padding: 0.2rem 0.6rem;
+  }
+
+  #carrinho-icone {
+    right: 15px;
+    top: 15px;
+  }
+
+  #carrinho-icone img {
+    width: 40px;
+    height: 40px;
+  }
+}
+

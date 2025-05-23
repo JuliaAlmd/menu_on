@@ -114,6 +114,20 @@ document.addEventListener('DOMContentLoaded', function() {
     window.alterarQuantidade = alterarQuantidade;
 });
 
+const btnFechar = document.getElementById('closeBtn');
+const carrinhoPopup = document.getElementById("carrinho-popup");
+
+
+ function fecharCarrinho() {
+    carrinhoPopup.style.display = "none";
+ }
+
+
+
+/*
+
+    teste
+
 const btnFechar = document.getElementById('btn-fechar-carrinho');
     const carrinho = document.getElementById('carrinho-popup');
 
@@ -146,3 +160,5 @@ const btnFechar = document.getElementById('btn-fechar-carrinho');
             fecharCarrinho();
         }
     });
+
+*/
