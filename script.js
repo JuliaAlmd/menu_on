@@ -146,7 +146,7 @@ const carrinhoPopup = document.getElementById("carrinho-popup");
 /* Filtra as pizzas em tempo real ao digitar na barra de pesquisa
     searchInput.addEventListener('input', filtrarPizzas); // 'input' é mais robusto que 'keyup'
 
-/*
+*/
 
     teste
 
