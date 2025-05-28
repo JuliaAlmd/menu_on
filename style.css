@@ -266,6 +266,9 @@
         background-color: #25D366 !important;
         color: white !important;
         transition: background-color 0.3s;
+        border-radius: 15px;
+        padding: 10px;
+        font-family: 'poppins', sans-serif;
       }
       
       .whatsapp-button:hover {
@@ -606,7 +609,7 @@
   }
     
   #horario-funcionamento {
-    font-family: poppins, sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 1.2rem;  
     color: #333;
     margin: 20px 0;
