@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const itensCarrinho = document.getElementById("itens-carrinho");
     const totalSpan = document.getElementById("total");
     const formCliente = document.getElementById("form-cliente");
+    const searchInput = document.getElementById('barra-pesquisa');
+    const pizzaCards = document.querySelectorAll('.pizza-card'); 
+
 
     // Variável do carrinho
     let carrinhoItens = {};
@@ -16,6 +19,23 @@ document.addEventListener('DOMContentLoaded', function() {
         carrinhoPopup.style.display = carrinhoPopup.style.display === "block" ? "none" : "block";
     }
 
+
+     * Filtra os cards de pizza com base no texto digitado na barra de pesquisa.
+     */
+    const filtrarPizzas = () => {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+
+        pizzaCards.forEach(card => {
+            const pizzaName = card.querySelector('h3').textContent.toLowerCase();
+            const pizzaDescription = card.querySelector('p').textContent.toLowerCase(); // Supondo que você queira pesquisar na descrição também
+
+            if (pizzaName.includes(searchTerm) || pizzaDescription.includes(searchTerm)) {
+                card.style.display = 'block'; // Ou 'flex' se o seu CSS usar flexbox para os cards
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    };
     // Função para atualizar quantidade
     function alterarQuantidade(id, delta) {
         const span = document.querySelector(`.quantidade[data-id="${id}"]`);
@@ -122,7 +142,8 @@ const carrinhoPopup = document.getElementById("carrinho-popup");
     carrinhoPopup.style.display = "none";
  }
 
-
+/ Filtra as pizzas em tempo real ao digitar na barra de pesquisa
+    searchInput.addEventListener('input', filtrarPizzas); // 'input' é mais robusto que 'keyup'
 
 /*
 
