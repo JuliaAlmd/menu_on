@@ -21,8 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-     /* Filtra os cards de pizza com base no texto digitado na barra de pesquisa.
-     */
+     /* Filtra os cards de pizza com base no texto digitado na barra de pesquisa.*/
     const filtrarPizzas = () => {
         const searchTerm = searchInput.value.toLowerCase().trim();
 
@@ -143,10 +142,7 @@ const carrinhoPopup = document.getElementById("carrinho-popup");
     carrinhoPopup.style.display = "none";
  }
 
-/* Filtra as pizzas em tempo real ao digitar na barra de pesquisa
-    searchInput.addEventListener('input', filtrarPizzas); // 'input' é mais robusto que 'keyup'
-
-*/
+/* Filtra as pizzas em tempo real ao digitar na barra de pesquisa searchInput.addEventListener('input', filtrarPizzas); // 'input' é mais robusto que 'keyup*/
 
     teste
 
