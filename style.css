@@ -608,12 +608,44 @@
     height: 40px;
   }
     
-  #horario-funcionamento {
-    font-family: 'poppins', sans-serif;
-    font-size: 1.2rem;  
+ .horario-funcionamento{
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
     color: #333;
     margin: 20px 0;
-    padding: auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.redes-sociais
+{
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+  .info-extra {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-extra div {
+    margin-bottom: 15px;
+  }
+
+  .social-icons a {
+    margin-bottom: 10px;
+  }
 }
 }
 
