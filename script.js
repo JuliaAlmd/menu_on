@@ -143,7 +143,7 @@ const carrinhoPopup = document.getElementById("carrinho-popup");
     carrinhoPopup.style.display = "none";
  }
 
-/ Filtra as pizzas em tempo real ao digitar na barra de pesquisa
+/* Filtra as pizzas em tempo real ao digitar na barra de pesquisa
     searchInput.addEventListener('input', filtrarPizzas); // 'input' é mais robusto que 'keyup'
 
 /*
