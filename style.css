@@ -231,6 +231,10 @@
         font-family: 'Poppins', sans-serif
       }
 
+#carrinho-popup.show{
+    display: block;
+}
+
 
     .fechar-carrinho{
       width: 50px;
