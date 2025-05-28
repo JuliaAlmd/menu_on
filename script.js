@@ -18,10 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Função para mostrar/ocultar carrinho (usando classes para animação)
     function toggleCarrinho() {
+        // Usa classList.toggle para adicionar/remover a classe 'show'
+        // Seu CSS deve ter #carrinho-popup { display: none; } e #carrinho-popup.show { display: block; }
         carrinhoPopup.classList.toggle('show');
     }
 
-    // Função para fechar o carrinho (para o botão 'X')
+    // Função para fechar o carrinho (para o botão 'X' e clique fora)
     function fecharCarrinho() {
         carrinhoPopup.classList.remove('show');
     }
@@ -33,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         pizzaCards.forEach(card => {
             const pizzaName = card.querySelector('h3').textContent.toLowerCase();
-            const pizzaDescription = card.querySelector('p') ? card.querySelector('p').textContent.toLowerCase() : ''; // Adicionado verificação para descrição, caso não exista
+            // Adicionado verificação para 'p' pois algumas pizzas podem não ter descrição
+            const pizzaDescription = card.querySelector('p') ? card.querySelector('p').textContent.toLowerCase() : ''; 
             
             // Verifica se o termo de pesquisa está no nome ou na descrição da pizza
             if (pizzaName.includes(searchTerm) || pizzaDescription.includes(searchTerm)) {
@@ -122,10 +125,12 @@ document.addEventListener('DOMContentLoaded', function() {
         mensagem += `*Celular:* ${celular}\n\n`;
         mensagem += `*Itens do Pedido:*\n`;
 
-        Object.values(carrinhoItens).forEach(item => {
+        // Iterar sobre os itens do carrinho para adicionar ao pedido
+        Object.keys(carrinhoItens).forEach(id => {
+            const item = carrinhoItens[id];
             mensagem += `- ${item.nome} (${item.quantidade}x) - R$ ${(item.quantidade * item.preco).toFixed(2).replace(".", ",")}\n`;
-            // Adicionar observações específicas do item, se houver
-            const obsTextarea = document.querySelector(`.item-carrinho .quantidade[data-id="${item.id}"]`).closest('.item-carrinho').querySelector('textarea');
+            // Obter observações específicas do item do textarea correto
+            const obsTextarea = itensCarrinho.querySelector(`.item-carrinho .quantidade[data-id="${id}"]`).closest('.item-carrinho').querySelector('textarea');
             if (obsTextarea && obsTextarea.value.trim() !== '') {
                 mensagem += `  (Obs: ${obsTextarea.value.trim()})\n`;
             }
@@ -144,10 +149,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Event Listeners
+    // Abre/fecha o carrinho quando o ícone do carrinho é clicado
     carrinhoIcone.addEventListener("click", toggleCarrinho);
     
-    // Event listener para o botão de fechar o carrinho
+    // Fecha o carrinho quando o botão 'X' (closeBtn) é clicado
     document.getElementById('closeBtn').addEventListener('click', fecharCarrinho);
+
+    // Opcional: Fechar carrinho ao clicar fora dele
+    document.addEventListener('click', function(event) {
+        // Se o clique não foi no ícone do carrinho e não foi dentro do pop-up do carrinho
+        if (!carrinhoIcone.contains(event.target) && !carrinhoPopup.contains(event.target) && carrinhoPopup.classList.contains('show')) {
+            fecharCarrinho();
+        }
+    });
 
     entregaRadios.forEach(radio => {
         radio.addEventListener("change", (e) => {
@@ -170,7 +184,8 @@ document.addEventListener('DOMContentLoaded', function() {
         searchInput.addEventListener('input', filtrarPizzas);
     }
 
-    // Torna as funções disponíveis globalmente (para os onclick nos botões de quantidade)
+    // Torna as funções de alterarQuantidade e fecharCarrinho disponíveis globalmente
+    // Isso é necessário se você as estiver chamando diretamente via onclick no HTML
     window.alterarQuantidade = alterarQuantidade;
-    window.fecharCarrinho = fecharCarrinho; // Garante que fecharCarrinho está global
+    window.fecharCarrinho = fecharCarrinho; 
 });
