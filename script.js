@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-     * Filtra os cards de pizza com base no texto digitado na barra de pesquisa.
+     /* Filtra os cards de pizza com base no texto digitado na barra de pesquisa.
      */
     const filtrarPizzas = () => {
         const searchTerm = searchInput.value.toLowerCase().trim();
